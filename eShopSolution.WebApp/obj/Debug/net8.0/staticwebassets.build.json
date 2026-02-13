@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pP5yAnSMtc4BR6PbMiGvTWBTcHfCdItkyHQTEvqcAdM=",
+  "Source": "eShopSolution.WebApp",
+  "BasePath": "_content/eShopSolution.WebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
