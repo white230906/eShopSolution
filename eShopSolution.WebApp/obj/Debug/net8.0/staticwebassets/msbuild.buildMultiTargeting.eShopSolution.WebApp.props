@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\eShopSolution.WebApp.props" />
-</Project>
