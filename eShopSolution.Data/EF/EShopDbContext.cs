@@ -1,5 +1,6 @@
 using eShopSolution.Data.Configurations;
 using eShopSolution.Data.Entities;
+using eShopSolution.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols;
 
@@ -25,6 +26,7 @@ public class EShopDbContext: DbContext
     public DbSet<Transaction> Transactions { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        //Configure using Fluent API
         modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
         modelBuilder.ApplyConfiguration(new ProductConfiguration());
         modelBuilder.ApplyConfiguration(new CategoryConfiguration());
@@ -40,5 +42,7 @@ public class EShopDbContext: DbContext
         modelBuilder.ApplyConfiguration(new PromotionConfiguration());
         modelBuilder.ApplyConfiguration(new TransactionConfiguration());
         
+        //Data seeding
+        modelBuilder.Seed();
     }
 }
