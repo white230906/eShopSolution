@@ -470,5 +470,9 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,dotnetcore,windows,rider,intellij
 
-TetPee.Api/appsettings.json
-TetPee.Api/appsettings.Development.json
+eShopSolution.WebApp/appsettings.json
+eShopSolution.WebApp/appsettings.Development.json
+
+bin/
+obj/
+*.restore.info
