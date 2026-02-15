@@ -10,5 +10,6 @@ public class Category
         public int? ParentId   { get; set; }
         public Status Status { get; set; }
 
-    
+        public ICollection<ProductInCategory>  ProductInCategories { get; set; } = new  List<ProductInCategory>();
+        public ICollection<CategoryTranslation> CategoryTranslations   { get; set; } = new  List<CategoryTranslation>();
 }
